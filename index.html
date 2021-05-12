@@ -1,11 +1,24 @@
 <html>
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <script src="script.js"></script>
     <!-- <link rel="stylesheet" type="text/css" href="styles.css"> -->
   </head>
+
   <body>
     <h1>Hello there!</h1>
     <a href="/me.html">My other page</a>
+
+    <script>
+      setTimeout(function(){
+        console.log('executed after 3 seconds');
+      },3000);
+      setTimeout(()=>{
+        console.log('executed after 4 seconds');
+      },4000);
+      setInterval(()=>{
+        console.log('executed after 1 seconds');
+      },1000);
+    </script>
   </body>
 </html>
